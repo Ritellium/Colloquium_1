@@ -9,8 +9,8 @@ Task was:
 5. Write API Tests for Rest Service
 
 Progress:
-1. +
-2. +
+1. ++
+2. ++
 3. +- (Has bugs)
-4. +
-5. -
+4. ++
+5. --
