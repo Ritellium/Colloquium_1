@@ -18,9 +18,16 @@ package org.example;
 */
 
 
+import java.io.IOException;
+
 public class Main {
-    public static void main(String[] args) {
-        System.out.println(StringEngine.concatString("Hello ", "world!"));
-        System.out.println(StringEngine.multiplicateString("I hate Rest Service\n", 2));
+    public static void main(String[] args) throws IOException {
+        try {
+            System.out.println(FacadeString.stringConCut("Hello", "world!"));
+            System.out.println(FacadeString.stringMultiply("I hate Rest Service\n", 2));
+        }
+        catch (Exception e) {
+            System.out.println(e.getClass() + ": " + e.getMessage());
+        }
     }
 }
