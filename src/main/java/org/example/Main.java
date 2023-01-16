@@ -19,8 +19,8 @@ package org.example;
 
 
 public class Main {
-
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        System.out.println(StringEngine.concatString("Hello ", "world!"));
+        System.out.println(StringEngine.multiplicateString("I hate Rest Service\n", 2));
     }
 }
