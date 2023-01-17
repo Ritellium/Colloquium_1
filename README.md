@@ -9,8 +9,8 @@ Task was:
 5. Write API Tests for Rest Service
 
 Progress:
-1. ++
-2. ++
-3. +- (Has bugs)
-4. ++
-5. --
+1. Done
+2. Done
+3. Done
+4. Done
+5. Half-done (Launch main)
