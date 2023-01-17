@@ -23,8 +23,10 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
         try {
-            System.out.println(FacadeString.stringConCut("Hello", "world!"));
-            System.out.println(FacadeString.stringMultiply("I hate Rest Service\n", 2));
+            System.out.println(">> Result ConCut1: " + FacadeString.stringConCut("Hello_", "world!"));
+            System.out.println(">> Result ConCut2: " + FacadeString.stringConCut("Day_", "Number_25"));
+            System.out.println(">> Result Mul1: " + FacadeString.stringMultiply("I_hate_Rest_Service_", 2));
+            System.out.println(">> Result Mul2: " + FacadeString.stringMultiply("Some_string_", 5));
         }
         catch (Exception e) {
             System.out.println(e.getClass() + ": " + e.getMessage());

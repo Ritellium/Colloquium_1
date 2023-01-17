@@ -13,7 +13,7 @@ public class StringController {
     public static final String arg1str = "str1";
     public static final String arg2str = "str2";
     public static final String arg2num = "num";
-    public static final String strCut = "StringCat/";
+    public static final String strCut = "StringCut/";
     public static final String strCutMapping = strCut + "{" + arg1str + "}/{" + arg2str + "}";
     public static final String strMul = "StringMul/";
     public static final String strMulMapping = strMul + "{" + arg1str + "}/{" + arg2num + "}";

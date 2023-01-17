@@ -1,6 +1,8 @@
 package org.example;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.hc.client5.http.classic.methods.HttpGet;
@@ -18,18 +20,18 @@ public class FacadeString {
 
         HttpUriRequest httpRequest = new HttpGet(request.toString());
         var httpResponse = HttpClientBuilder.create().build().execute(httpRequest);
-        String result = objectMapper.readValue(httpResponse.getEntity().getContent(), String.class);
-        return result;
+        BufferedReader res = new BufferedReader(new InputStreamReader(httpResponse.getEntity().getContent()));
+        return res.readLine();
     }
     public static String stringMultiply(String str1, int num) throws IOException
     {
-        StringBuilder request = new StringBuilder(AppUrl).append(StringController.strMul).append("/");
+        StringBuilder request = new StringBuilder(AppUrl).append(StringController.strMul);
         request.append(str1).append("/");
         request.append(num);
 
         HttpUriRequest httpRequest = new HttpGet(request.toString());
         var httpResponse = HttpClientBuilder.create().build().execute( httpRequest );
-        String result = objectMapper.readValue(httpResponse.getEntity().getContent(), String.class);
-        return result;
+        BufferedReader res = new BufferedReader(new InputStreamReader(httpResponse.getEntity().getContent()));
+        return res.readLine();
     }
 }
